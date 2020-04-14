@@ -6,29 +6,29 @@ const assertMsg = (name) => `${title}, ${Date.now() - start} ms., ${name}`;
 
 let x = '';
 
-x += _;
+x += 'ja';
 
 const exercise1_cb_1 = () => {
-  x += 'ri';
+    x += 'ri';
 };
-setTimeout(exercise1_cb_1, _);
+setTimeout(exercise1_cb_1, 200);
 
-x += _;
+x += 'va';
 
 const exercise1_cb_2 = () => {
-  const test1 = x === 'javascript';
-  console.assert(test1, assertMsg('x === "javascript"'));
+    const test1 = x === 'javascript';
+    console.assert(test1, assertMsg('x === "javascript"'));
 };
-setTimeout(exercise1_cb_2, _);
+setTimeout(exercise1_cb_2, 500);
 
 const exercise1_cb_3 = () => {
-  x += 'sc';
+    x += 'sc';
 };
-setTimeout(exercise1_cb_3, _);
+setTimeout(exercise1_cb_3, 100);
 
 const exercise1_cb_4 = () => {
-  x += 'pt';
+    x += 'pt';
 };
-setTimeout(exercise1_cb_4, _);
+setTimeout(exercise1_cb_4, 300);
 
-x += _;
+x += '';
