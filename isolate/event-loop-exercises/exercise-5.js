@@ -6,45 +6,45 @@ let next = 1;
 const arr = [];
 
 const exercise5_cb_0 = () => {
-  arr.push(next);
-  next++;
+    arr.push(next);
+    next++;
 };
 const intervalId = setInterval(exercise5_cb_0, 100);
 
 // fill in the blanks
 
 const exercise5_cb_1 = () => {
-  const sum = arr.reduce((sum, next) => sum + next, 0);
-  const test1 = sum === 0;
-  console.assert(test1, assertMsg('Test 1'));
+    const sum = arr.reduce((sum, next) => sum + next, 0);
+    const test1 = sum === 0;
+    console.assert(test1, assertMsg('Test 1'));
 };
-setTimeout(exercise5_cb_1, _);
+setTimeout(exercise5_cb_1, 0);
 
 const exercise5_cb_2 = () => {
-  const test2 = arr.length === 7;
-  console.assert(test2, assertMsg('Test 2'));
+    const test2 = arr.length === 7;
+    console.assert(test2, assertMsg('Test 2'));
 };
-setTimeout(exercise5_cb_2, _);
+setTimeout(exercise5_cb_2, 700);
 
 const exercise5_cb_3 = () => {
-  const sum = arr.reduce((sum, next) => sum + next, 0);
-  const test1 = sum === 21;
-  console.assert(test1, assertMsg('Test 3'));
-  clearTimeout(intervalId);
-  arr.push('almost done!');
+    const sum = arr.reduce((sum, next) => sum + next, 0);
+    const test1 = sum === 21;
+    console.assert(test1, assertMsg('Test 3'));
+    clearTimeout(intervalId);
+    arr.push('almost done!');
 };
-setTimeout(exercise5_cb_3, _);
+setTimeout(exercise5_cb_3, 600);
 
 const exercise5_cb_4 = () => {
-  const sum = arr.reduce((sum, next) => sum + next, 0);
-  const test1 = sum === 6;
-  console.assert(test1, assertMsg('Test 4'));
+    const sum = arr.reduce((sum, next) => sum + next, 0);
+    const test1 = sum === 6;
+    console.assert(test1, assertMsg('Test 4'));
 };
-setTimeout(exercise5_cb_4, _);
+setTimeout(exercise5_cb_4, 300);
 
 const exercise5_cb_5 = () => {
-  const sum = arr.reduce((sum, next) => sum + next, 0);
-  const test1 = sum === 10;
-  console.assert(test1, assertMsg('Test 5'));
+    const sum = arr.reduce((sum, next) => sum + next, 0);
+    const test1 = sum === 10;
+    console.assert(test1, assertMsg('Test 5'));
 };
-setTimeout(exercise5_cb_5, _);
+setTimeout(exercise5_cb_5, 400);
