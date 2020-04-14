@@ -8,18 +8,18 @@ let timeouts = 0;
 // fill in the blanks
 
 const timeout_cb_exercise4 = () => {
-  const test = intervals === (timeouts * 3);
-  console.assert(test, assertMsg('Time Out ' + timeouts));
-  timeouts++;
+    const test = intervals === (timeouts * 3);
+    console.assert(test, assertMsg('Time Out ' + timeouts));
+    timeouts++;
 };
-setTimeout(timeout_cb_exercise4, _);
+setTimeout(timeout_cb_exercise4, 100);
 
 const interval_cb_exercise4 = () => {
-  const test = intervals <= (timeouts * 3);
-  console.assert(test, assertMsg('Interval ' + intervals));
-  if (intervals === (timeouts * 3) - 1) {
-    setTimeout(timeout_cb_exercise4, _);
-  }
-  intervals++;
+    const test = intervals <= (timeouts * 3);
+    console.assert(test, assertMsg('Interval ' + intervals));
+    if (intervals === (timeouts * 3) - 1) {
+        setTimeout(timeout_cb_exercise4, 200);
+    }
+    intervals++;
 };
-setInterval(interval_cb_exercise4, _);
+setInterval(interval_cb_exercise4, 300);
