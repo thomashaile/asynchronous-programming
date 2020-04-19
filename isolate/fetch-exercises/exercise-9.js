@@ -3,7 +3,7 @@ const start = Date.now();
 const assertMsg = (name) => `${title}, ${Date.now() - start} ms., ${name}`;
 
 // complete the URL to pass the asserts
-const url = 'https://jsonplaceholder.typicode.com/_';
+const url = 'https://jsonplaceholder.typicode.com/albums/7/photos';
 
 // this code works
 console.log(title + ', fetching:', url);

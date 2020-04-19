@@ -14,6 +14,7 @@ fetch(url)
     .then(data => {
         console.log(assertMsg('requested data:'), data);
         // write me!
+        return data.filter(post => post.userId === 8).slice(0, 10);
     })
     .then(filteredPosts => {
         const test1 = filteredPosts.length === 10;

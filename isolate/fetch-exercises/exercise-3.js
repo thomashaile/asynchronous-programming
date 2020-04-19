@@ -9,6 +9,7 @@ fetch(url)
     .then(data => {
         console.log(assertMsg('requested data:'), data);
         // write me!
+        return data.filter(album => album.userId === 9).slice(0, 10);
     })
     .then(albums => {
         const test1 = albums.length === 10;
