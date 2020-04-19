@@ -10,6 +10,8 @@ fetch(url)
     .then(data => {
         console.log(assertMsg('requested data:'), data);
         // write me
+        return data[80]; //works on debugger
+
     })
     .then(photo => {
         const test1 = photo.title === 'error magni fugiat dolorem impedit molestiae illo ullam debitis';

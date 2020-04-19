@@ -9,6 +9,12 @@ fetch(url)
     .then(data => {
         console.log(assertMsg('requested data:'), data);
         // write me!
+        return data.map(user => ({
+            id: user.id,
+            name: user.name,
+            username: user.username
+        }));
+
     })
     .then(simplifiedUsers => {
         const test1 = simplifiedUsers.length === 10;

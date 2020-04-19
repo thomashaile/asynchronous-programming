@@ -6,7 +6,7 @@ const title = 'exercise 6';
 const start = Date.now();
 const assertMsg = (name) => `${title}, ${Date.now() - start} ms., ${name}`;
 // complete the URL
-const url = 'https://jsonplaceholder.typicode.com/_';
+const url = 'https://jsonplaceholder.typicode.com/users/8/posts';
 
 console.log(title + ', fetching:', url);
 // this code is correct

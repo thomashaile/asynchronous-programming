@@ -9,6 +9,8 @@ fetch(url)
     .then(data => {
         console.log(assertMsg('requested data:'), data);
         // write me!
+        return data.filter(post => post.body.includes("magnam"));
+
     })
     .then(filteredPosts => {
         const test1 = filteredPosts.length === 14;
